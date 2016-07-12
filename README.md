@@ -21,16 +21,16 @@ Sendgrid module contains code in php to send email through sendgrid and get emai
       return $response;
     }
   ## Example - Send email
-  	$params = array(
-	        'api_user'  => $this->user,
-	        'api_key'   => $this->pass,
-	        'replyto'   => $replyTo,
-	        'subject'   => $subject,
-	        'html'      => $HTML_Body,
-	        'text'      => $TextBody,
-	        'from'      => $fromMail,
-	        'fromname'  => $fromName,
-	      );
+	$params = array(
+	'api_user'  => $this->user,
+	'api_key'   => $this->pass,
+	'replyto'   => $replyTo,
+	'subject'   => $subject,
+	'html'      => $HTML_Body,
+	'text'      => $TextBody,
+	'from'      => $fromMail,
+	'fromname'  => $fromName,
+	);
       // Adding cc
       foreach($ccMail_arr as $cc) {
           $toMail_arr = array_merge($toMail_arr, $cc);
