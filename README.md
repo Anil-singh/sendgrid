@@ -2,27 +2,6 @@
 Sendgrid module contains code in php to send email through sendgrid and get email stats from sendgrid using web api calls.
 
 ## Example - code samples
-    // Sendgrid Class
-    // Executing curl request
-    function executeCurl ($request,$params){     
-      // Generate curl request
-      $session = curl_init($request);
-      // Tell curl to use HTTP POST
-      curl_setopt ($session, CURLOPT_POST, true);
-      //curl_setopt($session, CURLOPT_SAFE_UPLOAD, true);
-      // Tell curl that this is the body of the POST
-      curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
-      // Tell curl not to return headers, but do return the response      
-      curl_setopt($session, CURLOPT_HEADER, false);      
-      curl_setopt($session, CURLOPT_ENCODING, 'gzip,deflate' );
-      curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
-      // obtain response
-      $response = curl_exec($session);
-      //print_r(expression)
-      curl_close($session);
-      return $response;
-    }
-    
     
   ## Sendgrid Send email API call
   
