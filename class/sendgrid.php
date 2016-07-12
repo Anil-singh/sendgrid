@@ -1,8 +1,8 @@
 <?php
   /**********************************************************************************************************
-   * Sendgrid class has methods to makes api calls to sendgrid end points.                                  *
-   * Includes functions to send emails and get Sendgrid stats for give time period.                         *
-   * Includes Function to execute curl request.                                                             *
+   * Sendgrid class has methods to makes calls to sendgrid web api end points.                              *
+   * Includes functions to send emails and get Sendgrid stats.                                              *
+   * Includes function to execute curl request.                                                             *
    **********************************************************************************************************/ 
   class Sendgrid {
     private $user    = "";
@@ -101,8 +101,7 @@
      * @access public       
      * @param str $start_date
      * @param str $end_date
-     * @return str $response json string stats response 
-     * @author Anil
+     * @return str $response json string stats response
     **/    
     public function getSendGridStats ( $start_date, $end_date ){
       
@@ -125,7 +124,6 @@
      * @param str $request uri request url
      * @param str $params  curl request parameters
      * @return str $response curl execution result 
-     * @author Anil
     **/    
     private function executeCurl ($request,$params){     
       // Generate curl request
