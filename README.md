@@ -1,5 +1,5 @@
 ## Sendgrid - Send email and get email status using Sendgrid WEB API call.
-Sendgrid module contains code in php to send email through sendgrid and get email stats from sendgrid using web api calls
+Sendgrid module contains code in php to send email through sendgrid and get email stats from sendgrid using web api calls.
 
 ## Example code samples
 
@@ -22,6 +22,7 @@ Sendgrid module contains code in php to send email through sendgrid and get emai
       curl_close($session);
       return $response;
     }
+    
     
   ## Example - Send email
   
