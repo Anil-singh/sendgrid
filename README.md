@@ -3,8 +3,8 @@ Sendgrid module contains code in php to send email through sendgrid and get emai
 
 ## Example - code samples
     
-  ## Sendgrid Send email API call
-  
+  ## Sendgrid Class
+  	// Send email api call
 	$params = array(
 	'api_user'  => $this->user,
 	'api_key'   => $this->pass,
@@ -46,7 +46,7 @@ Sendgrid module contains code in php to send email through sendgrid and get emai
       $request  =  $this->url.'api/mail.send.json';
       $response = $this->executeCurl( $request, $params );
 
-### Sendgrid stats API call
+      // get stats API call
       $request =  $this->url.'api/stats.get.json';
       $params = array(
         'api_user'   => $this->user,
