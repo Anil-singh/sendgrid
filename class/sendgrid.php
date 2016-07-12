@@ -1,7 +1,7 @@
 <?php
   /**********************************************************************************************************
    * Sendgrid class has methods to makes calls to sendgrid web api end points.                              *
-   * Includes functions to send emails and get Sendgrid stats.                                              *
+   * Includes functions to send email  and get Sendgrid stats.                                              *
    * Includes function to execute curl request.                                                             *
    **********************************************************************************************************/ 
   class Sendgrid {
