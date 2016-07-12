@@ -12,7 +12,7 @@
   $subject      = "Mail Subject Here"; // Email subject here.
   $html_message = "<h1>HTML Message</h1>"; // Email html content leave blank if using only text content.
   $text_message = ""; //  Email text content leave blank is using html content. 
-  $files        = array('attachement1.txt','attachement2.txt'); 
+  $files        = array('attachement1.txt','attachement2.txt'); // make sure attachements are uploaded in uploads folder
 
   /* Call for send mail function of sendgrid class */
   $result       = $sendgrid->sendGridMail( $to, $from, $from_name, $cc, $bcc, $reply_to, $subject, $html_message, $text_message, $files ); 
