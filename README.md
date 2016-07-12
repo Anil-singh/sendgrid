@@ -21,6 +21,7 @@ Sendgrid module contains code in php to send email through sendgrid and get emai
       return $response;
     }
   ## Example - Send email
+  
 	$params = array(
 	'api_user'  => $this->user,
 	'api_key'   => $this->pass,
